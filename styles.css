@@ -1,59 +1,124 @@
-/* Basic styling for the page */
-body {
-    font-family: sans-serif;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
 header {
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-color: #4CAF50; /* Green color */
+    color: #fff; /* White text */
+    padding: 1em 0;
     text-align: center;
 }
 
-h1 {
-    font-size: 2rem;
+header h1 {
+    font-size: 2em;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style-type: none;
 }
 
-nav li {
-    display: inline-block;
+nav ul li {
+    display: inline;
     margin-right: 20px;
 }
 
-a {
+nav a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
+    font-weight: bold;
 }
 
+/* Main styles */
 main {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-}
-
-.hero {
-    text-align: center;
 }
 
 .hero img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: auto;
 }
 
-.featured-birds .bird-carousel {
-    /* Carousel styling here */
+.hero h2 {
+    color: #333;
+}
+
+.hero p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+/* About us section styles */
+.about-us {
+    margin-top: 40px;
+}
+
+.about-us h2 {
+    color: #4CAF50;
+}
+
+.about-us p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Featured Birds section styles */
+.featured-birds {
+    margin-top: 40px;
+}
+
+.featured-birds h2 {
+    color: #4CAF50;
+}
+
+.bird-carousel {
+    display: flex;
+    overflow-x: auto;
 }
 
 .bird-card {
-    display: inline-block;
-    margin: 10px;
-    width: 200px;
-    text-align: center;
+    width: 300px;
+    margin-right: 20px;
 }
 
-/* Add more styles for other elements as needed */
+.bird-card img {
+    width: 100%;
+    height: auto;
+}
+
+.bird-card h3 {
+    color: #333;
+}
+
+.bird-card p {
+    color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
