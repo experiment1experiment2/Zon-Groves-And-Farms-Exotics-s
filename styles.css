@@ -1,1 +1,59 @@
+/* Basic styling for the page */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.featured-birds .bird-carousel {
+    /* Carousel styling here */
+}
+
+.bird-card {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Add more styles for other elements as needed */
