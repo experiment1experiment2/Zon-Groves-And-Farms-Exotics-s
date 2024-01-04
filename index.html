@@ -3,51 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zon Groves and Farms Aviary</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Aviary Complete Site</title>
 </head>
 <body>
     <header>
-        <h1>Zon Groves and Farms Aviary</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Birds</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to the Aviary</h1>
     </header>
 
-    <main>
-        <section class="hero">
-            <img src="images/aviary-banner.jpg" alt="Beautiful aviary with lush greenery and colorful birds">
-            <h2>Experience the Wonder of Birds</h2>
-            <p>Step into a world of vibrant plumage, enchanting calls, and graceful flight.</p>
-            <button>Explore Our Aviary</button>
-        </section>
+    <div id="aviary-container">
+        <div class="bird-card" onclick="showDetails('Parrot')">
+            <img src="parrot.jpg" alt="Parrot">
+            <h2>Parrot</h2>
+        </div>
 
-        <section class="about-us">
-            <h2>About Zon Groves and Farms Aviary</h2>
-            <p>We are passionate about providing a safe and enriching environment for our birds, where they can thrive and showcase their natural beauty. Our aviary is home to a diverse collection of species, each with its own unique personality and charm.</p>
-            <p>We invite you to visit us and experience the joy of connecting with these remarkable creatures.</p>
-        </section>
+        <div class="bird-card" onclick="showDetails('Canary')">
+            <img src="canary.jpg" alt="Canary">
+            <h2>Canary</h2>
+        </div>
 
-        <section class="featured-birds">
-            <h2>Featured Birds</h2>
-            <div class="bird-carousel">
-                <div class="bird-card">
-                    <img src="images/macaw.jpg" alt="Macaw">
-                    <h3>Macaws</h3>
-                    <p>Known for their vibrant colors and intelligence.</p>
-                </div>
-                </div>
-        </section>
-    </main>
+        <!-- Add more bird cards as needed -->
 
-    <footer>
-        <p>&copy; 2024 Zon Groves and Farms</p>
-    </footer>
+        <div id="bird-details"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
