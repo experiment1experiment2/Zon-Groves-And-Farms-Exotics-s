@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Aviary Complete Site</title>
+    <title>The Aviary</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to the Aviary</h1>
+        <h1>The Aviary</h1>
     </header>
 
-    <div id="aviary-container">
-        <div class="bird-card" onclick="showDetails('Parrot')">
-            <img src="parrot.jpg" alt="Parrot">
-            <h2>Parrot</h2>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Birds</a></li>
+            <li><a href="#">Care</a></li>
+            <li><a href="#">Visit</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-        <div class="bird-card" onclick="showDetails('Canary')">
-            <img src="canary.jpg" alt="Canary">
-            <h2>Canary</h2>
-        </div>
+    <main>
+        <section id="hero">
+            <img src="images/banner.jpg" alt="Beautiful birds in the aviary">
+            <h2>Experience a world of wonder</h2>
+            <p>Discover the beauty and diversity of birds in our aviary.</p>
+        </section>
 
-        <!-- Add more bird cards as needed -->
+        </main>
 
-        <div id="bird-details"></div>
-    </div>
+    <footer>
+        <p>&copy; 2024 The Aviary</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
