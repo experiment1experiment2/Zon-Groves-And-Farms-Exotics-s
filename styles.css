@@ -1,43 +1,51 @@
+/* style.css */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #339966;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-#aviary-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.bird-card {
-    width: 200px;
-    margin: 10px;
     padding: 10px;
-    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Footer styling */
+
+footer {
+    background-color: #f2f2f2;
+    padding: 10px;
     text-align: center;
-    background-color: #f0f0f0;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.bird-card img {
-    max-width: 100%;
-    height: auto;
-}
-
-#bird-details {
-    margin-top: 20px;
 }
