@@ -379,129 +379,173 @@ section{
 
 /* end */
 
-/* banner */
+/* birds */
 
-.banner{
-  background: url(../images/banner.png) no-repeat;
-}
-
-.banner .row{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 6rem;
-}
-
-.banner .row .content{
-  flex:  1 1 39rem;
-}
-
-.banner .row .content h3{
-  font-size: 2rem;
-  color: var(--main);
-  text-transform: uppercase;
-}
-
-.banner .row .content p{
-  font-size: 1.6rem;
-  color: var(--black);
-  padding: 1rem 0;
-  line-height: 1.8;
-}
-
-.banner .row .image{
-  flex: 1 1 41rem;
-  margin-bottom: -14rem;
-}
-
-.banner .row .image img{
-  width: 100%;
-}
-
-/* end */
-
-/* pricing */
-
-.pricing .box-container{
+.birds .box-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
   gap: 2rem;
 }
 
-.pricing .box-container .box{
-  background: var(--bg);
-  padding: 3rem;
+.birds .box-container .box{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.birds .box-container .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.birds .box-container .box:hover img{
+  transform: scale(1.1);
+}
+
+.birds .box-container .box .content{
   text-align: center;
-  border-radius: 79% 51% 81% 19% / 58% 93% 7% 42%;
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+  padding: 20px;
+  z-index: 1;
+  transition: 0.5s ease;
 }
 
-.pricing .box-container .box:hover{
-  border-radius: .5rem;
+.birds .box-container .box:hover::after{
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+  opacity: 0.5;
+  transition: 0.5s ease;
 }
 
-.pricing .box-container .box img{
-  height: 15.5rem;
-  width: 15.5rem;
-  margin-bottom: .5rem;
+.birds .box-container .box .content h3{
+  text-align: center;
+  font-size: 3rem;
+  color: var(--white);
 }
 
-.pricing .box-container .box h3{
-  font-size: 2.6rem;
-  color: var(--black);
-  padding: 1rem 0;
+.birds .box-container .box:is(:hover, :focus-within) .content{
+  transform: translateY(-20px);
 }
-
-.pricing .box-container .box .price{
-  font-size: 2.2rem;
-  color: var(--main);
-  padding: .5rem 0;
-}
-
-.pricing .box-container .box p{
-  font-size: 1.5rem;
-  color: var(--black);
-  padding: .5rem 0;
-}
-
 
 /* end */
 
-/* contact */
+/* reptiles */
 
-.contact{
-  background: var(--bg);
+.reptiles .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+  gap: 2rem;
 }
 
-.contact form{
-  padding: 2rem 10%;
-  text-align: center;
+.reptiles .box-container .box{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-.contact form .inputBox{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.contact form .inputBox input,
-.contact form textarea{
-  font-size: 1.7rem;
-  width: 49%;
-  padding: 1rem 2rem;
-  margin: 1rem 0;
-  border-radius: .5rem;
-  text-transform: none;
-}
-
-.contact form .inputBox input::placeholder,
-.contact form textarea::placeholder{
-  text-transform: capitalize;
-}
-
-.contact form textarea{
-  height: 15rem;
-  resize: none;
+.reptiles .box-container .box img{
+  height: 100%;
   width: 100%;
+  object-fit: cover;
+}
+
+.reptiles .box-container .box:hover img{
+  transform: scale(1.1);
+}
+
+.reptiles .box-container .box .content{
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+  padding: 20px;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+.reptiles .box-container .box:hover::after{
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.reptiles .box-container .box .content h3{
+  text-align: center;
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.reptiles .box-container .box:is(:hover, :focus-within) .content{
+  transform: translateY(-20px);
+}
+
+/* end */
+
+/* fish */
+
+.fish .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+  gap: 2rem;
+}
+
+.fish .box-container .box{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.fish .box-container .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.fish .box-container .box:hover img{
+  transform: scale(1.1);
+}
+
+.fish .box-container .box .content{
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+  padding: 20px;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+.fish .box-container .box:hover::after{
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.fish .box-container .box .content h3{
+  text-align: center;
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.fish .box-container .box:is(:hover, :focus-within) .content{
+  transform: translateY(-20px);
 }
 
 /* end */
