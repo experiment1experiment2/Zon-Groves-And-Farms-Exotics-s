@@ -625,6 +625,11 @@ section{
     font-size: 50%;
   }
 
+@media (max-width: 768px) {
+  .animals .box-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns for mobile */
+  }
+}
   .home .content h3 {
     font-size: 4rem;
   }
