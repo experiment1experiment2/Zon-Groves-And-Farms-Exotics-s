@@ -189,7 +189,7 @@ section{
 
 /* home */
 
-.home{
+.home {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -198,22 +198,43 @@ section{
   background-position: top;
 }
 
-.home .content{
+.home .content {
   max-width: 60rem;
+  padding: 0 20px; /* Add some padding to the sides for better mobile readability */
 }
 
-.home .content h3{
+.home .content h3 {
   color: var(--white);
   font-size: 6rem;
   line-height: 1.4;
   font-weight: 400;
 }
 
-.home .wave{
+.home .wave {
   position: absolute;
-  bottom: 0; left: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 12rem;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 767px) {
+  .home {
+    background-position: center; /* Adjust background position for better visibility on smaller screens */
+  }
+
+  .home .content {
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .home .content h3 {
+    font-size: 4rem; /* Decrease font size for smaller screens */
+  }
+
+  .home .wave {
+    display: none; /* Hide the wave on smaller screens */
+  }
 }
 
 /* end */
