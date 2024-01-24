@@ -658,15 +658,14 @@ section{
   .home .content h3 {
     font-size: 5rem;
   }
-}
 
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-
-  .home .content h3 {
-    font-size: 4rem;
+  /* Add the following styles to change the grid layout for smaller screens */
+  .animals .box-container,
+  .birds .box-container,
+  .reptiles .box-container,
+  .fish .box-container {
+    grid-template-columns: repeat(auto-fill, minmax(calc(33.3333% - 1rem), 1fr));
   }
 }
+
 
