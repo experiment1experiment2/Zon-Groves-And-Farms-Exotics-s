@@ -677,7 +677,7 @@ section{
   .reptiles .box-container,
   .fish .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(calc(33.3333% - 1rem), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     grid-gap: 1rem; /* Adjust spacing between cards */
   }
 }
