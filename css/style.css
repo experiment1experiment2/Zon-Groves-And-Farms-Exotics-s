@@ -247,55 +247,63 @@ section{
 
 .animals .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(6, 1fr); /* 6 equal columns for cards */
+  grid-gap: 1rem; /* Adjust spacing between cards */
 }
 
-.animals .box-container .box{
+.animals .box-container .box {
   height: 100%;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
 }
 
-.animals .box-container .box img{
+.animals .box-container .box img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Adjusts image to fit while maintaining aspect ratio */
 }
 
-.animals .box-container .box:hover img{
-  transform: scale(1.1);
-}
-
-.animals .box-container .box .content{
-  text-align: center;
+.animals .box-container .box .content {
+  /* No background color for transparency */
+  color: #fff; /* White text */
+  padding: 15px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
   position: absolute;
-  bottom: 0;
-  left: 0; right: 0;
-  padding: 20px;
-  z-index: 1;
-  transition: 0.5s ease;
-}
-
-.animals .box-container .box:hover::after{
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: var(--black);
-  opacity: 0.5;
-  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align content at bottom */
 }
 
-.animals .box-container .box .content h3{
-  text-align: center;
-  font-size: 1.5rem;
-  color: var(--white);
+.animals .box-container .box:hover .content {
+  opacity: 1; /* Fade in on hover */
 }
 
-.animals .box-container .box:is(:hover, :focus-within) .content{
-  transform: translateY(-20px);
+.animals .box-container .box .content h3 {
+  margin: 0;
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold;
+  text-align: center; /* Center text horizontally */
+}
+
+.animals .box-container .box:hover {
+  transform: scale(1.1) translateY(-10px); /* Slightly enlarge and lift card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Optional: adjust hover color (replace color) */
+.animals .box-container .box:hover .content h3 {
+  color: #ff0000; /* Change text color on hover (red as example) */
 }
 
 /* end */
