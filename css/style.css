@@ -220,25 +220,38 @@ section{
 
 /* gallery */
 
-.gallery{
-  background: var(--bg);
+.gallery {
+  background: #f8f8f8; /* Set a light background color */
+  padding: 20px; /* Add some padding for spacing */
 }
 
-.gallery .slide .image{
-  height: 30rem;
-  overflow: hidden;
+.gallery .slide {
   position: relative;
+  overflow: hidden;
+  border-radius: 8px; /* Add rounded corners to the slides */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
 
-.gallery .slide .image img{
+.gallery .slide .image {
+  height: 300px; /* Adjust the height of the gallery slides */
+}
+
+.gallery .slide .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 8px; /* Ensure the image corners match the slide's corners */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.gallery .slide:hover .image img {
+  transform: scale(1.1); /* Zoom in slightly on hover */
 }
 
 .swiper-button-next,
-.swiper-button-prev{
-  color: var(--white);
+.swiper-button-prev {
+  color: #333; /* Change button color to a dark shade */
+  font-size: 18px; /* Increase button size */
 }
 
 /* end */
