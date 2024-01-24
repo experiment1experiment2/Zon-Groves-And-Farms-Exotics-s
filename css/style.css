@@ -631,13 +631,21 @@ section{
 }
 
 @media (max-width: 768px) {
+  html {
+    font-size: 50%; /* Adjust the font size for smaller screens */
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
   .header .navbar {
     position: absolute;
     top: 99%;
     left: 0;
     right: 0;
     background: var(--white);
-    border-top: .1rem solid var(--main);
+    border-top: 0.1rem solid var(--main);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
@@ -651,6 +659,10 @@ section{
     font-size: 2rem;
   }
 
+  section {
+    padding: 8rem 2rem;
+  }
+
   .home {
     background-position: left;
   }
@@ -659,12 +671,13 @@ section{
     font-size: 5rem;
   }
 
-  /* Adjust the grid layout for smaller screens */
+  /* Adjust the grid layout for smaller screens to display 3 cards in a row */
   .animals .box-container,
   .birds .box-container,
   .reptiles .box-container,
   .fish .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(calc(33.3333% - 1rem), 1fr));
+    grid-gap: 1rem; /* Adjust spacing between cards */
   }
 }
