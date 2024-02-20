@@ -415,6 +415,696 @@ section{
 
 /* end */
 
+/* variousexoticbirds */
+
+.variousexoticbirds .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem; /* Adjust spacing between cards */
+}
+
+.variousexoticbirds .box-container .box {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.variousexoticbirds .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* Adjusts image to fit while maintaining aspect ratio */
+}
+
+.variousexoticbirds .box-container .box .content {
+  /* No background color for transparency */
+  color: #fff; /* White text */
+  padding: 15px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align content at bottom */
+}
+
+.variousexoticbirds .box-container .box:hover .content {
+  opacity: 1; /* Fade in on hover */
+}
+
+.variousexoticbirds .box-container .box .content {
+  text-align: center; /* Center text horizontally within the content container */
+}
+
+.variousexoticbirds .box-container .box .content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.variousexoticbirds .box-container .box:hover {
+  transform: scale(1.1) translateY(-10px); /* Slightly enlarge and lift card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Optional: adjust hover color (replace color) */
+.variousexoticbirds .box-container .box:hover .content h3 {
+  color: #ff0000; /* Change text color on hover (red as example) */
+}
+
+/* end */
+
+/* amazonbirds */
+
+.amazonbirds .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem; /* Adjust spacing between cards */
+}
+
+.amazonbirds .box-container .box {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.amazonbirds .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* Adjusts image to fit while maintaining aspect ratio */
+}
+
+.amazonbirds .box-container .box .content {
+  /* No background color for transparency */
+  color: #fff; /* White text */
+  padding: 15px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align content at bottom */
+}
+
+.amazonbirds .box-container .box:hover .content {
+  opacity: 1; /* Fade in on hover */
+}
+
+.amazonbirds .box-container .box .content {
+  text-align: center; /* Center text horizontally within the content container */
+}
+
+.amazonbirds .box-container .box .content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.amazonbirds .box-container .box:hover {
+  transform: scale(1.1) translateY(-10px); /* Slightly enlarge and lift card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Optional: adjust hover color (replace color) */
+.amazonbirds .box-container .box:hover .content h3 {
+  color: #ff0000; /* Change text color on hover (red as example) */
+}
+
+/* end */
+
+/* waterbirds */
+
+.waterbirds .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem; /* Adjust spacing between cards */
+}
+
+.waterbirds .box-container .box {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.waterbirds .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* Adjusts image to fit while maintaining aspect ratio */
+}
+
+.waterbirds .box-container .box .content {
+  /* No background color for transparency */
+  color: #fff; /* White text */
+  padding: 15px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align content at bottom */
+}
+
+.waterbirds .box-container .box:hover .content {
+  opacity: 1; /* Fade in on hover */
+}
+
+.waterbirds .box-container .box .content {
+  text-align: center; /* Center text horizontally within the content container */
+}
+
+.waterbirds .box-container .box .content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.waterbirds .box-container .box:hover {
+  transform: scale(1.1) translateY(-10px); /* Slightly enlarge and lift card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Optional: adjust hover color (replace color) */
+.waterbirds .box-container .box:hover .content h3 {
+  color: #ff0000; /* Change text color on hover (red as example) */
+}
+
+/* end */
+
+/* softbillbirds */
+
+.softbillbirds .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem; /* Adjust spacing between cards */
+}
+
+.softbillbirds .box-container .box {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.softbillbirds .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* Adjusts image to fit while maintaining aspect ratio */
+}
+
+.softbillbirds .box-container .box .content {
+  /* No background color for transparency */
+  color: #fff; /* White text */
+  padding: 15px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align content at bottom */
+}
+
+.softbillbirds .box-container .box:hover .content {
+  opacity: 1; /* Fade in on hover */
+}
+
+.softbillbirds .box-container .box .content {
+  text-align: center; /* Center text horizontally within the content container */
+}
+
+.softbillbirds .box-container .box .content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.softbillbirds .box-container .box:hover {
+  transform: scale(1.1) translateY(-10px); /* Slightly enlarge and lift card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Optional: adjust hover color (replace color) */
+.softbillbirds .box-container .box:hover .content h3 {
+  color: #ff0000; /* Change text color on hover (red as example) */
+}
+
+/* end */
+
+/* pheasants */
+
+.pheasants .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem; /* Adjust spacing between cards */
+}
+
+.pheasants .box-container .box {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pheasants .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* Adjusts image to fit while maintaining aspect ratio */
+}
+
+.pheasants .box-container .box .content {
+  /* No background color for transparency */
+  color: #fff; /* White text */
+  padding: 15px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align content at bottom */
+}
+
+.pheasants .box-container .box:hover .content {
+  opacity: 1; /* Fade in on hover */
+}
+
+.pheasants .box-container .box .content {
+  text-align: center; /* Center text horizontally within the content container */
+}
+
+.pheasants .box-container .box .content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pheasants .box-container .box:hover {
+  transform: scale(1.1) translateY(-10px); /* Slightly enlarge and lift card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Optional: adjust hover color (replace color) */
+.pheasants .box-container .box:hover .content h3 {
+  color: #ff0000; /* Change text color on hover (red as example) */
+}
+
+/* end */
+
+/* finches */
+
+.finches .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem; /* Adjust spacing between cards */
+}
+
+.finches .box-container .box {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.finches .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* Adjusts image to fit while maintaining aspect ratio */
+}
+
+.finches .box-container .box .content {
+  /* No background color for transparency */
+  color: #fff; /* White text */
+  padding: 15px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align content at bottom */
+}
+
+.finches .box-container .box:hover .content {
+  opacity: 1; /* Fade in on hover */
+}
+
+.finches .box-container .box .content {
+  text-align: center; /* Center text horizontally within the content container */
+}
+
+.finches .box-container .box .content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.finches .box-container .box:hover {
+  transform: scale(1.1) translateY(-10px); /* Slightly enlarge and lift card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Optional: adjust hover color (replace color) */
+.finches .box-container .box:hover .content h3 {
+  color: #ff0000; /* Change text color on hover (red as example) */
+}
+
+/* end */
+
+/* lorikeets */
+
+.lorikeets .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem; /* Adjust spacing between cards */
+}
+
+.lorikeets .box-container .box {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.lorikeets .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* Adjusts image to fit while maintaining aspect ratio */
+}
+
+.lorikeets .box-container .box .content {
+  /* No background color for transparency */
+  color: #fff; /* White text */
+  padding: 15px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align content at bottom */
+}
+
+.lorikeets .box-container .box:hover .content {
+  opacity: 1; /* Fade in on hover */
+}
+
+.lorikeets .box-container .box .content {
+  text-align: center; /* Center text horizontally within the content container */
+}
+
+.lorikeets .box-container .box .content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.lorikeets .box-container .box:hover {
+  transform: scale(1.1) translateY(-10px); /* Slightly enlarge and lift card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Optional: adjust hover color (replace color) */
+.lorikeets .box-container .box:hover .content h3 {
+  color: #ff0000; /* Change text color on hover (red as example) */
+}
+
+/* end */
+
+/* macaws */
+
+.macaws .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem; /* Adjust spacing between cards */
+}
+
+.macaws .box-container .box {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.macaws .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* Adjusts image to fit while maintaining aspect ratio */
+}
+
+.macaws .box-container .box .content {
+  /* No background color for transparency */
+  color: #fff; /* White text */
+  padding: 15px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align content at bottom */
+}
+
+.macaws .box-container .box:hover .content {
+  opacity: 1; /* Fade in on hover */
+}
+
+.macaws .box-container .box .content {
+  text-align: center; /* Center text horizontally within the content container */
+}
+
+.macaws .box-container .box .content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.macaws .box-container .box:hover {
+  transform: scale(1.1) translateY(-10px); /* Slightly enlarge and lift card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Optional: adjust hover color (replace color) */
+.macaws .box-container .box:hover .content h3 {
+  color: #ff0000; /* Change text color on hover (red as example) */
+}
+
+/* end */
+
+/* conures */
+
+.conures .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem; /* Adjust spacing between cards */
+}
+
+.conures .box-container .box {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.conures .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* Adjusts image to fit while maintaining aspect ratio */
+}
+
+.conures .box-container .box .content {
+  /* No background color for transparency */
+  color: #fff; /* White text */
+  padding: 15px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align content at bottom */
+}
+
+.conures .box-container .box:hover .content {
+  opacity: 1; /* Fade in on hover */
+}
+
+.conures .box-container .box .content {
+  text-align: center; /* Center text horizontally within the content container */
+}
+
+.conures .box-container .box .content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.conures .box-container .box:hover {
+  transform: scale(1.1) translateY(-10px); /* Slightly enlarge and lift card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Optional: adjust hover color (replace color) */
+.conures .box-container .box:hover .content h3 {
+  color: #ff0000; /* Change text color on hover (red as example) */
+}
+
+/* end */
+
+/* cockatoos */
+
+.cockatoos .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem; /* Adjust spacing between cards */
+}
+
+.cockatoos .box-container .box {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cockatoos .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* Adjusts image to fit while maintaining aspect ratio */
+}
+
+.cockatoos .box-container .box .content {
+  /* No background color for transparency */
+  color: #fff; /* White text */
+  padding: 15px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align content at bottom */
+}
+
+.cockatoos .box-container .box:hover .content {
+  opacity: 1; /* Fade in on hover */
+}
+
+.cockatoos .box-container .box .content {
+  text-align: center; /* Center text horizontally within the content container */
+}
+
+.cockatoos .box-container .box .content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cockatoos .box-container .box:hover {
+  transform: scale(1.1) translateY(-10px); /* Slightly enlarge and lift card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Optional: adjust hover color (replace color) */
+.cockatoos .box-container .box:hover .content h3 {
+  color: #ff0000; /* Change text color on hover (red as example) */
+}
+
+/* end */
+
 /* reptiles */
 
 .reptiles .box-container {
@@ -553,9 +1243,9 @@ section{
 
 /* end */
 
-/* animals, birds, reptiles, fish */
+/* animals, birds, variousexoticbirds, amazonbirds, waterbirds, softbillbirds, pheasants, finches, lorikeets, macaws, conures, cockatoos, reptiles, fish */
 
-.animals, .birds, .reptiles {
+.animals, .birds, .variousexoticbirds, .amazonbirds, .waterbirds, .softbillbirds, .pheasants, .finches, .lorikeets, .macaws, .conures, .cockatoos, .reptiles {
   margin-bottom: -12rem; /* You can adjust the negative margin as needed */
 }
 
@@ -708,6 +1398,16 @@ section{
   /* Adjust the grid layout for smaller screens to display 3 cards in a row */
   .animals .box-container,
   .birds .box-container,
+  .variousexoticbirds .box-container,
+  .amazonbirds .box-container,
+  .waterbirds .box-container,
+  .softbillbirds .box-container,
+  .pheasants .box-container,
+  .finches .box-container,
+  .lorikeets .box-container,
+  .macaws .box-container,
+  .conures .box-container,
+  .cockatoos .box-container,
   .reptiles .box-container,
   .fish .box-container {
     display: grid;
@@ -715,4 +1415,3 @@ section{
     grid-gap: 1rem; /* Adjust spacing between cards */
   }
 }
-
